@@ -1,0 +1,969 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin:0px;
+            }
+            .dcon{
+                background-image:linear-gradient(rgb(66,62,58),rgba(75,75,75,0.6)),url("https://www.dcu.ie/sites/default/files/styles/widescreen_television/public/media/2020/05/15/statement_image_website.jpg?itok=Aon7hRXc");
+                background-size: cover;
+                width:100%;
+                height: 100vh;
+                
+            }
+            nav{
+                display:flex;
+                width:100%;
+                height:10vh;
+                justify-content: space-between;
+                top:auto;  
+                background-color: white;
+            }
+            img{
+                width:150px;
+                height:55px;
+            }
+           
+            .right{
+                display:flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .right div a{
+              padding: 0px 15px;
+              
+            }
+            a:link{
+                text-decoration: none;
+                color: cyan;
+            
+            }
+            a:visited{
+                text-decoration: none;
+                color: orange;
+            }
+            h1{
+                color:darkorange;
+                margin-top:10%;
+                text-align: center;
+                font-size:40px;
+                padding-top: 12px;
+            }
+            .dcu{
+                text-align: center;
+                color:black;
+                font-size:20px;
+                padding-top: 30px;
+            }
+            .cl{
+                width:20%;
+                background: transparent;
+                font-size:20px;
+                margin-top: 30px;
+                border:2px solid white;
+                border-radius: 50px;
+                
+                margin-left: 40%;
+                text-align: center;
+                
+            }
+
+
+
+
+
+
+
+
+
+
+            .tmain{
+                width:100%;
+                height:100vh;
+                display:flex;
+            
+                flex-direction: column;
+                justify-content: center;
+                margin-top:5px;
+            }
+            .tcont{
+                width:100%;
+                display:flex;
+                justify-content:space-around;
+                align-items: center;
+
+            }
+            .tleft{
+                background-color: aquamarine;
+                width:38%;
+                height:48vh;
+                text-align: center;
+                margin-left: 10px;
+                border-radius: 10px;
+            }
+            .tright{                                       
+                background-color: aquamarine;
+                width:38%;
+                height:48vh;
+                text-align: center;
+                margin-left: 10px;
+                border-radius: 10px;
+            }
+            .t h1{
+                text-align: center;
+                color:red;
+                padding-bottom: 30px;
+            }
+            .tleft img{
+                width:80px;
+                height:80px;
+                padding:3px;
+                border-radius: 50%;
+            
+            }
+            .tright img{
+                width:80px;
+                height:80px;
+                padding:3px;
+                border-radius: 50%;
+            }
+            .tstr{
+                color:yellow;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+             .log div{
+                justify-content:center;
+            }
+           .logcon{
+                background-image: url("https://th.bing.com/th/id/R.9ce22121523e0993b83df6a0e58675b9?rik=S1ADLRS00%2bxsQg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-LdCjSqNPsVM%2fVio-V8PVsOI%2fAAAAAAAAAAc%2fRrBSSYq7TUU%2fs1600%2fapple.jpg&ehk=SEYGZcLp7f5T51El34Cm%2fDH4RbGhmfSNi%2fehrWEFz84%3d&risl=&pid=ImgRaw&r=0");
+                width: 100%;
+                height: 100vh;
+                margin-top:25%;
+            }
+            .logcontainer{
+                width:45%;
+                height:70vh;
+                position: relative;
+                left:30%;
+                top:10vh;
+                background-image:url("https://3.bp.blogspot.com/-DaMrnN1jUSw/UqdtcWhSCAI/AAAAAAAAA54/UlHLZ83_Fww/s1600/Green+Water+Drops+wallpaper.jpg");
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .log h1{
+                text-align: center;
+                color:white;
+                margin-bottom: 10px;
+                padding:10px;
+            }
+            .logcls{
+                border:2px solid white;
+                background: transparent;
+                border-radius: 50px;
+                text-align: center;
+                color:white;
+                margin-bottom: 3px;
+                margin-top: 10px;
+                
+             
+                 }
+                 .logbtn{
+                    width:50%;
+                    background: transparent;
+                    margin-top: 50px;
+                    border:2px solid white;
+                    border-radius: 50px;
+                    color:rgb(255,51,0);
+                    font-size: medium;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+                .fcon{
+                width:80%;
+                height:90vh;
+                position: relative;
+                top:5vh;
+                left: 10%;
+                background-color: rgb(202, 209, 209);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+            }
+            .fcls{
+                border:2px solid whitesmoke;
+              
+                color:black;
+               
+
+                height: 30px;
+                align-items: center;
+                padding:3px;
+                display: flex;
+                flex-direction:column;
+                margin-right: 10px;
+                margin-left: 10px;
+                border-radius: 5px;
+                margin-top: 7px;
+            }
+
+            .fleft{
+                width:33%;
+                font-size: 24px;
+                height:50vh;
+            }
+            .fv1{
+                font-size: 20px;
+            }
+           
+            .fright{
+                width: 30%;
+                background-color:white;
+                height:50vh;
+                
+                top:10vh;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .f h1{
+                color:rgb(35, 24, 179);
+                margin-top: 20%;
+                
+            }
+            .fbtn{
+              color:white;
+              background-color:blue;
+              margin-top: 10px;
+              height: 6vh;
+              margin-right: 10px;
+              margin-left: 10px;
+              border-radius: 5px;
+              font-size: 20px;
+              
+            
+            }
+            .fright p{
+                color:blue;
+                text-align: center;
+                margin-top: 7px;
+            }
+            .f hr{
+                margin-top: 20px;
+                
+            }
+            .fc2{
+                background-color: green;
+                color: white;
+                text-align: center;
+                margin:30px 40px;
+                border-radius: 5px;
+                height:7vh;
+            }
+            .fp1{
+                position: absolute;
+                top:450px;
+                right:100px;
+            }
+
+
+
+
+
+
+
+
+            .twcon{
+                width:80%;
+                height: 80vh;
+                background-color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 3% 10% auto;
+                margin-top: 80px;
+
+            }
+            .tw img{
+                width:80%;
+                height: 70vh;
+                margin-left: 50px;
+
+            }
+            .twright{
+                width:50%;
+                height: 70vh;
+                
+                margin-right: 40px;
+            }
+            .tw i{
+                font-size: 15px;
+                color:blue;
+                margin-left: 10px;
+                margin-top: 2%;
+                margin-right: 5%;
+       
+            }
+            .tw h1{
+                margin-left: 3%;
+            }
+            .tw h3{
+                margin-left: 3%;
+            }
+            .twv{
+                width:60%;
+                height:5vh;
+               margin-left: 5%;
+               margin-right: 5%;
+               margin-bottom: 3%;
+               text-align: center;
+            }
+            .tw input{
+                background-color: blue;
+                margin-left: 50px;
+            }
+            .tw p span{
+                color:blueviolet;
+                margin-right: 20px;
+                margin-top: 40%;
+            }
+            .tw p{
+                color: black;
+            }
+            .twk{
+                width:20%;
+                color: blue;
+                margin-left: 130px;
+            }
+            .twx{
+                margin-top: 10px;
+                margin-left: 20px;
+                font-size: 30px;
+            }
+            .tw{
+                margin-top:15px;
+            }
+
+
+
+
+
+
+
+
+
+            .kcon{
+                width:80%;
+                height: 80vh;
+                display: flex;
+                text-align: center;
+                justify-content:space-around;
+                margin-left: 150px;
+                margin-top: 80px;
+            }
+            .kleft{
+                width: 29%;
+                height: 48vh;
+                margin-left: 10%;
+                margin-top: 10%;
+            }
+            .kleft img{
+                width: 100%;
+                height: 60vh;
+            }
+            .kright{
+                width: 29%;
+                height: 48vh;
+                margin-top: 10%;
+                margin-right: 21%;
+            }
+            .kright h2{
+                color: black;
+                margin-top: 10%;
+            }
+            .kcls{
+                height: 30px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+                margin-top: 10px;
+                border:none;
+            }
+
+            .kbtn{
+                font-size: 20px;
+                width: 70%;
+                background-color: blue;
+                border-radius: 3px;
+                margin-top: 40px;
+                margin-right: 70px;
+            }
+
+
+
+
+
+
+
+            .t2cont{
+                width:45%;
+                height: 65vh;
+                position: relative;
+                top:10vh;
+                left: 25%;
+                border-radius: 5px;
+                display:flex;
+                flex-direction: column; 
+                align-items: center;
+                margin-top: 100px;
+               
+            }
+            .t2 h1{
+                color: orange;
+            } 
+            .t2prof img{
+                width:100px;
+                height: 100px;
+                border: 2px solid orange;
+                padding:3px;
+                border-radius: 50%;
+            }
+            .t2text{
+                color:orangered;
+                font-size:20px;
+            }
+            .t2prof p{
+                color:black;
+            }
+            
+
+
+
+
+
+
+
+
+
+            .bcon{
+                width:70%;
+                height:100vh;
+                margin-left: 20%;
+                align-items: centers;
+                background-color: rgb(228, 224, 218);
+                justify-content: space-around;
+                position: relative;
+                display:flex;
+                margin-top: 150px;
+              
+                
+            
+            }
+            .bleft{
+                width: 48%;
+                height: 95vh;
+                background-color: hsla(0, 72%, 34%, 0);
+                display: flex;
+                flex-direction: column;
+            }
+            .bl1{
+                width: 100%;
+                height: 40vh;
+                background-color:white;
+                border-radius: 5px;
+                margin: 5px 5px;
+            }
+    
+            .bl2{
+                width: 100%;
+                height: 40vh;
+                background-color:white;
+                border-radius: 5px;
+                margin: 5px 5px;
+            }
+            .bl3{
+                width: 100%;
+                height: 40vh;
+                background-color:white;
+                border-radius: 5px;
+                margin: 5px 5px;
+            }
+            .bbright{
+                width: 48%;
+                height: 95vh;
+                background-color: hsla(0, 72%, 34%, 0);
+                display: flex;
+                flex-direction: column;
+            }
+            .bbr1{
+                width: 100%;
+                height: 40vh;
+                background-color: white;
+                border-radius: 5px;
+                margin: 5px 5px;
+                
+            }
+            .bbr2{
+                width: 100%;
+                height: 40vh;
+                background-color: white;
+                border-radius: 5px;
+                margin: 5px 5px;
+            }
+            .bbr3{
+                width: 100%;
+                height: 40vh;
+                background-color: white;
+                border-radius: 5px;
+                margin: 5px 5px;
+            }
+            .bcon h2{
+                font-size:20px;
+                margin-left:30px;
+                margin-top:30px;
+            }
+            .bcon p{
+                color:red;
+                font-size:25px;
+                margin-left:30px;
+                margin-top:5px;
+            }
+            .bcon hr{
+                margin-top: 50px;
+                border-color: 2px solid black;
+            }
+            .bx{
+                color:gray;
+                margin-left: 20px;
+                margin-top: 30px;
+            }
+            .bcon p1{
+                color:gray;
+                font-size: 20px;
+                margin-left:10px;
+            }
+            .bcon button{
+                color:red;
+                border:2px solid red;
+                border-radius:30px;
+                background-color: transparent;
+                font-size:20px;
+                margin-left:50px;
+                margin-top: 10px;
+                height: 7vh;
+                width:50%;
+            }
+            .by{
+                margin-right: 15px;
+                margin-top: 10px;
+                color:orangered;
+            }
+
+
+
+
+
+
+
+
+
+            .locationcon{
+                background-image: url("https://cartocdn-gusc.global.ssl.fastly.net/kike-5/api/v1/map/static/named/tpl_584c92ac_5d19_11e5_8637_0e853d047bba/1200/630.png");
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+                position: relative;
+                margin-top:200px;
+        
+             
+
+            }
+            .lcont{
+               width:80%;
+               height:80vh;
+               margin-left:5%;
+               display:flex;
+               justify-content: space-around;
+               position:absolute;
+               top:10vh;
+              
+            }
+            .lc1{
+              
+              width:20%;
+              color:white;  
+            }
+         
+          .l hr{
+            border-color: orangered;
+            width:100%;
+            margin-top: 10px;
+      
+          }
+          .lx{
+            color:orangered;
+            padding:10px;
+            
+          }
+          .lc4{
+            line-height: 23px;;
+          }
+          .l p{
+            margin-top: 18px;
+          }
+               
+
+
+
+
+
+
+
+
+
+
+
+
+           
++
+
+        </style>
+    </head>
+    <div class="dcon">
+    <body>
+        
+        <nav>
+            <div>
+                <img src="logo.jpg"/>
+
+
+            </div>
+            <div class="right">
+                <div> <a href="#">Home</a></div>
+            <div> <a href="#">Courses</a></div>
+            <div> <a href="#">About</a></div>
+            <div> <a href="#">Login</a></div>
+            <div> <a href="#">Register</a></div>
+            <div> <a href="#">Contact us</a></div>
+        </div>
+        </nav>
+        <div>
+            <h1>India's No.1 Training Institute</h1>
+            <div class="dcu">To become a full-stock developer now you can join with us</div>
+            <input class="cl" type="button" value="click me to join"/>
+        </div>
+       
+    </div>
+
+
+
+
+
+
+        <div class="tmain">
+            <div class="t">
+            <h1>Testiomnials</h1></div>
+            <div class="tcont">
+                <div class="tleft">
+                    <img src="https://th.bing.com/th/id/OIP.X0b_PzTVLuB8dyug7gSl5wHaLH?w=114&h=180&c=7&r=0&o=5&pid=1.7"/>
+                    <p>Testimonials are one of the most important tools a company can use to show potential customers how valuable their products and services are.Testimonials are a short statements that describes how a product are service worked for a customer</p>
+                    <h2>Agarwal</h2>
+                    <div class="tstr"><i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    
+                    </div>
+                </div>
+                <div class="tright">
+                    <img src="https://th.bing.com/th?q=Cool+Profile+Girls&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"/>
+                    <p>Testimonials are one of the most important tools a company can use to show potential customers how valuable their products and services are.Testimonials are a short statements that describes how a product are service worked for a customer</p>
+                    <h2>Roshan</h2>
+                    <div class="tstr"><i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                </div>        
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="log">
+            <body>
+                <div class="logcon">
+        
+                <div class="logcontainer">
+                    <h1>Login</h1>
+                    <input type="text" value="User id" class="logcls"</br>
+                    <input type="text" value="Password" class="logcls"</br>
+                    <input type="button" value="Login" class="logbtn"</br>
+                    <input type="button" value="Iam NEW" class="logbtn"</br>
+        
+                </div>
+                </div>
+            </body>
+            </div>
+   
+   
+   
+   
+   
+
+
+            
+
+
+            <body>
+
+                <div class="fcon">
+                    <div class="fleft">
+                        <div class="f">
+                        <h1> facebook</h1></div>
+                        <div class="fv1">
+                        <p>Facebook helps you connect and share with the people in your life</p></div>
+                    </div>
+                       
+                    <div class="fright">
+                        <input type="text" value="" placeholder="Email address or phone number" class="fcls"/>
+                        <input type="password" value="" placeholder="password" class="fcls"/>
+                        <input type="button" value="Log In" class="fbtn"/>
+                        <p>Forgetten password?</p><hr>
+                        <input type="button" value="Create New Account" class="fc2"/>
+                        <hr>
+                        </div>
+                        <p1 class="fp1"><b>Create a page</b> for a celebraty,brand or business</p1>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="twcon">
+                    <div class="twleft">
+                        <div class="tw">
+                        <img src="https://cdn.christianitydaily.com/data/images/full/7496/twitter-logo.jpg?w=600"/>
+                    </div>
+                    </div>
+                    <div class="twright">
+                        <div class="i">
+                        <i class="twx fa-brands fa-twitter"></i>
+                        <h1>Happening now</h1>
+                        <h3>Join Twitter Today</h3></div>
+                      
+                            <button class="twv" type="button"><i class=" fa-brands fa-google"></i>Sign up with google</i></button>
+                            <button class="twv" type="button"><i class=" fa-brands fa-apple"></i>Sign up with apple</i></button>
+                            <hr/>
+                            <div class="tw">
+                            <input type="button" value="Sign up with phone or email"/>
+                            <p>By signing up you agree to the<span>Terms of service</span>and<span>privacy policy,</span>including<span>cookie use</span></div></p>
+                             <h4>Alreay an account?</h4>
+                             <button class="twk" type="button">Sign in</button>
+        
+                    </div>
+        
+                </div>
+
+
+
+
+
+
+
+                <div class="kcon">
+                    <div class="kleft">
+                        <img src="https://st3.depositphotos.com/1001286/12719/i/950/depositphotos_127193442-stock-photo-kite-flying-in-the-sky.jpg"/>
+                    </div>
+                    <div class="kright">
+                        <h2><b>Sign In</b></h2>
+                        <input type="text" value="" placeholder="User name" class="kcls"/>
+                        <input type="button" value="next" class="kbtn"/>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="t2cont">
+                    <div class="t2">
+                    <h1>Testimonials</h1></div>
+                    <div class="t2prof"><img src="https://dp.profilepics.in/profile_pictures/kids/cute_kids_04.jpg"/></div>
+                    <p>I am UJWAL VIJAYRAO TALKIT,Recently i got placed Mercedes Benz (R$D India) Through Vector.I am very thankfull to Vector for giving me this Golden Opportunity.I got placed in two companies Continential with a package of 6 LPA and Mercedes Benz with a package of 10LPA,I joined one of my dream company Mercedes benz</p>
+                    <div class="t2text">UJWAL VIJAYRAO TALKIT</div>
+                    <h5>V21BE6U1 | MERCEDES BENZ |10 LPA</h5>
+                </div>
+
+
+
+
+
+
+
+                <div class="bcon">
+                    <div class="bleft">
+                        <div class="bl1">
+                            <h2>PROGRAMMING</h2>
+                            <p>Core Java</p>
+                            <hr>
+                            <i class="bx fa-solid fa-code"></i>
+                            <p1>programs</p1>
+                            <button> <i class="by fa-brands fa-readme"></i> Start Learning</button>
+                        </div>
+                        <div class="bl2">
+                            <h2>PROGRAMMING</h2>
+                            <p>Language</p>
+                            <hr>
+                            <i class="bx fa-solid fa-code"></i>
+                            <p1>programs</p1>
+                            <button> <i class="by fa-brands fa-readme"></i> Start Learning</button>
+                        </div>
+                        <div class="bl3">
+                            <h2>PROGRAMMING</h2>
+                            <p>Android</p>
+                            <hr>
+                            <i class="bx fa-solid fa-code"></i>
+                            <p1>programs</p1>
+                            <button> <i class="by fa-brands fa-readme"></i> Start Learning</button>
+                        </div>
+        
+                    </div>
+                    <div class="bbright">
+                        <div class="bbr1">
+                            <h2>PROGRAMMING</h2>
+                            <p>Data Structure</p>
+                            <hr>
+                            <i class="bx fa-solid fa-code"></i>
+                            <p1>programs</p1>
+                            <button> <i class="by fa-brands fa-readme"></i> Start Learning</button>
+                        </div>
+                        <div class="bbr2">
+                            <h2>PROGRAMMING</h2>
+                            <p>Tally</p>
+                            <hr>
+                            <i class="bx fa-solid fa-code"></i>
+                            <p1>programs</p1>
+                            <button> <i class="by fa-brands fa-readme"></i> Start Learning</button>
+                        </div>
+                        <div class="bbr3">
+                            <h2>PROGRAMMING</h2>
+                            <p>HTML</p>
+                            <hr>
+                            <i class="bx fa-solid fa-code"></i>
+                            <p1>programs</p1>
+                            <button> <i class="by fa-brands fa-readme"></i> Start Learning</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                
+
+                    <div class="locationcon">
+    
+                            <div class="lcont">
+                           <div class="lc1"><h3>Hyderabad</h3><hr class="l">
+                            <div class="l">
+                          <p>#502 Nagasuri plaza(Bank of india building),Behind Maithrivanam,<Ameerpet,<br>Hyderabad-500038</p>
+                        <p><i class="lx fa-solid fa-phone"></i>    91 98666 66699</p>
+                      <p><i class="lx fa-sharp fa-solid fa-headphones"></i> o4o 2373 6669</p>
+                    <p><i class="lx fa-solid fa-envelope"></i>info@vectorindia.com</p></div></div>
+                           <div class="lc1"><h3>Banglore</h3><hr class="l">
+                            <div class="l">
+                          <p>33/49,27th cross,12th main,jayanagar 4th block,Banglore-560011</p>
+                          <p><i class="lx fa-solid fa-phone"></i> 91 98666 66699</p>
+                          <p><i class="lx fa-sharp fa-solid fa-headphones"></i> o4o 2373 6669</p>
+                        <p><i class="lx fa-solid fa-envelope"></i>bir@vectorindia.com</p></div></div>
+                           <div class="lc1"><h3>Chennai</h3><hr class="l">
+                            <div class="l">
+                          <p>2nd floor,179,1st main road,Nehru nagar,Lane opposite to turya hotel perunigudi,Chennai-600096</p>
+                          <p><i class="lx fa-solid fa-phone"></i>    91 98666 66699</p>
+                          <p><i class="lx fa-sharp fa-solid fa-headphones"></i> o4o 2373 6669</p>
+                        <p><i class="lx fa-solid fa-envelope"></i> chen@vectorindia</p></div></div>
+                           <div class="lc1"><h3>Company</h3><hr class="l">
+                            <div class="l">
+                            <p class="lc4">
+                              About vectorindia<br>
+                              carrers<br>
+                              Testimonials<br>
+                              photo gallary<br>
+                              product FAQs<br>
+                              policies<br>
+                              Blog<br>
+                              contact us<br>
+                              site map<br>
+                            </p>
+                          </div></div>
+                        
+                        </div>
+                        
+                      </div>
+   
+   
+   
+   
+   
+   
+    </body>
+</html>
